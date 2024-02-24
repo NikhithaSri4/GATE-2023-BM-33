@@ -120,7 +120,7 @@
 
 \textbf{Question:} 
 A continuous time, band-limited signal $x(t)$ has its Fourier transform described by:\\
-$ X(f) = \begin{cases} 
+$ X\brak{f} = \begin{cases} 
 1 - \frac{\abs{f}}{200} & \text{if } \abs{f} \leq 200 \\
 0 & \text{if } \abs{f} > 200 
 \end{cases} $ \\
@@ -136,6 +136,8 @@ The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transf
  	\caption{Input Parameters}
     \label{tab:table_33}
  \end{table}
+ 
+ When a continuous-time signal is sampled in the time domain, its Fourier transform is periodically replicated in the frequency domain with a period equal to the sampling frequency. This phenomenon is known as aliasing or periodic replication.
  
 \begin{align}
 X_s\brak{600} &= 1 \\

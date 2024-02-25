@@ -137,13 +137,12 @@ The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transf
     \label{tab:table_33}
  \end{table}
  
- When a continuous-time signal is sampled in the time domain, its Fourier transform is periodically replicated in the frequency domain with a period equal to the sampling frequency. This phenomenon is known as aliasing or periodic replication.
- 
 \begin{align}
+X_s\brak{f} &= \frac{1}{600} \sum_{k=-\infty}^{\infty} X\brak{f - 600k} \\
+\implies X_s\brak{f+600} &= X(f) \\
 X_s\brak{600} &= 1 \\
-X_s\brak{500} &= 1-\frac{\abs{100}}{200} \\
-\implies X_s\brak{500} &= \frac{1}{2} \\
-\frac{X_s{600}}{X_s{500}} &= 2 
+X_s\brak{500} &= \frac{1}{2} \\
+\frac{X_s\brak{600}}{X_s\brak{500}} &= 2 
 \end{align}
 
 \begin{figure}[h!]

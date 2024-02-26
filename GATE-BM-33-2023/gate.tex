@@ -138,12 +138,15 @@ The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transf
  	\caption{Input Parameters}
     \label{tab:table_33}
  \end{table}
- 
-\begin{align}
+
+\begin{align} 
 X_s\brak{f} &= \frac{1}{600} \sum_{k=-\infty}^{\infty} X\brak{f - 600k} \\
-\implies X_s\brak{f+600} &= \frac{X(f)}{600} \\
-X_s\brak{600} = \frac{X\brak{0}}{600} &= \frac{1}{600} \brak{from \eqref{eq:BM33}} \\
-X_s\brak{500} = \frac{X\brak{-100}}{600} &= \frac{1}{2\cdot 600} \\
+\implies X_s\brak{f+600} &= \frac{X(f)}{600} \end{align} \eqref{eq:BM33}
+\begin{align} 
+X_s\brak{600} &= \frac{X\brak{0}}{600} \\
+\implies X_s\brak{600} &= \frac{1}{600} \\
+X_s\brak{500} &= \frac{X\brak{-100}}{600} \\
+\implies X_s\brak{500} &= \frac{1}{2\cdot 600} \\
 \frac{X_s\brak{600}}{X_s\brak{500}} &= 2 
 \end{align}
 

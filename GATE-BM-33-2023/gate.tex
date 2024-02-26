@@ -126,7 +126,7 @@ A continuous time, band-limited signal $x\brak{t}$ has its Fourier transform des
 0 & \text{if } \abs{f} > 200 \label{eq:BM33}
 \end{cases}  \\
 \end{equation}
-The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transform of the signal is $X_s\brak{f}$. What is the value of $\frac{X_s(600)}{X_s(500)}$? \\
+The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transform of the signal is $X_s\brak{f}$. What is the value of $\frac{X_s\brak{600}}{X_s\brak{500}}$? \\
 
 \textbf{Solution: }
 
@@ -141,7 +141,7 @@ The signal is uniformly sampled at a sampling rate of 600 Hz. The Fourier transf
 
 \begin{align} 
 X_s\brak{f} &= \frac{1}{600} \sum_{k=-\infty}^{\infty} X\brak{f - 600k} \\
-\implies X_s\brak{f+600} &= \frac{X(f)}{600} \end{align} Using \eqref{eq:BM33}
+\implies X_s\brak{f+600} &= \frac{X\brak{f}}{600} \end{align} Using \eqref{eq:BM33}
 \begin{align} 
 X_s\brak{600} &= \frac{X\brak{0}}{600} \\
 \implies X_s\brak{600} &= \frac{1}{600} \\
@@ -154,14 +154,14 @@ X_s\brak{500} &= \frac{X\brak{-100}}{600} \\
     \centering
     \includegraphics[width=\columnwidth]{figs/f1.png}
     \caption{Plot of $X\brak{f}$}
-    \label{fig:1}
+    \label{fig:nikh1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\columnwidth]{figs/f2.png}
     \caption{Plot of $X_s\brak{f}$}
-    \label{fig:2}
+    \label{fig:nikh2}
 \end{figure}
 
 
